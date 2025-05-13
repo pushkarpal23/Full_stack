@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reverse Text</title>
+</head>
+<body>
+
+  <h3>Enter text to reverse:</h3>
+  <input type="text" id="text">
+  <button onclick="reverse()">Reverse</button>
+
+  <p id="output"></p>
+
+  <script>
+    function reverse() {
+      let text = document.getElementById("text").value;
+      let reversed = text.split("").reverse().join("");
+      document.getElementById("output").innerText = reversed;
+    }        
+  </script>
+
+  <p>
+    <div></div>
+    <img src="" alt="">
+  </p>
+</body>
+</html>
